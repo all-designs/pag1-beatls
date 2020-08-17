@@ -1,0 +1,930 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*If any common style use every tage exm:font-family thane this style enter body tag*/
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*If any web pase have more section title exm:h2 head style , font-family, font-width, anay thing more than this head tag into comon css */
+.section_title {
+	text-align: center;
+}
+
+.title_text {
+	display: inline-block;
+	text-align: left;
+}
+
+.title_text h2 {
+	line-height: 1;
+	color: #353535;
+	font-family: 'Oswald', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: -12px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+/*If ayne itam i do float than use clr-class after float itam*/
+.clr {
+	clear: both;
+}
+
+
+/*every itam in container*/
+.container {
+	margin: 0 auto;
+	width: 1140px;
+}
+
+/*END OF COMMON CSS*/
+
+
+
+
+
+/*===============
+HEADER CSS START
+=================*/
+/*hrader left*/
+
+.header-top {
+	background: #0872b9;
+}
+
+.header-left {
+	width: 50%;
+	float: left;
+
+}
+
+.header-left p {
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1;
+	padding: 9px 0;
+	color: #e7e7e7;
+}
+
+/*hrader right*/
+.header-right {
+	width: 50%;
+	float: right;
+	text-align: right;
+
+}
+
+.header-right a {
+	color: #e7e7e7;
+	font-size: 14px;
+	padding: 9px 0;
+	line-height: 1;
+	padding-left: 24px;
+	transition: all .3s linear;
+}
+
+.header-right a:hover {
+	color: #353535;
+}
+
+/*menu_bar css start*/
+
+
+.logo {
+	width: 20%;
+	padding: 16px 0;
+	float: left;
+}
+
+.menu_item {
+	float: left;
+	width: 80%;
+}
+
+.menu_item ul {
+	text-align: right;
+}
+
+.menu_item ul li {
+	display: inline-block;
+}
+
+.menu_item ul li a {
+	color: #353535;
+	font-size: 14px;
+	padding: 31px 0;
+	padding-left: 9px;
+	line-height: 1;
+	transition: all .3s linear;
+}
+
+.menu_item ul li:hover a {
+	color: #0872b9;
+}
+
+/*==============
+STICKY MENU CSS START
+==============*/
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99999999;
+	background: rgba(0, 0, 0, .50);
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s linear;
+}
+
+.sticky_active {
+	opacity: 1;
+	visibility: visible;
+	animation: stickyani 3s;
+}
+
+@keyframes stickyani {
+	from {
+		transform: translateY(-100%);
+	}
+
+	to {
+		transform: translateY(0);
+	}
+}
+
+.sticky_menu {
+	width: 100%;
+	height: 90px;
+}
+
+.s_menu_item {
+	height: 100%;
+	float: left;
+	width: 80%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.search_bar {
+	position: absolute;
+	top: 50%;
+	right: 30%;
+	transform: translateY(-50%);
+	width: 400px;
+	height: 34px;
+	border-radius: 23px;
+	border: 1px solid #fff;
+
+
+}
+
+.search_bar button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	color: #fff;
+}
+
+.search_bar input {
+	position: absolute;
+	width: 330px;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	color: #fff;
+}
+
+.search_bar button {
+	right: 10px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.side_menu {
+	width: 294px;
+	height: 0;
+	background: rgba(0, 0, 0, .61);
+	position: absolute;
+	right: 10px;
+	top: 100%;
+	transition: all .3s linear;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.side_menu_active {
+	height: 100vh;
+	opacity: 1;
+	visibility: visible
+}
+
+.side_menu ul {
+	font-size: 23px;
+	text-align: center;
+}
+
+.side_menu ul li {
+	padding: 16px;
+	transition: all .2s linear;
+}
+
+.side_menu ul li a {
+	color: #fff;
+}
+
+.side_menu ul li:hover {
+	background: #000;
+}
+
+.s_m_botton {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: none;
+	border: 1px solid #fff;
+	cursor: pointer;
+	color: #fff;
+}
+
+.icon_open,
+.icon_close {
+	font-size: 30px;
+}
+
+.icon_close {
+	display: none;
+}
+
+.i_open {
+	display: none;
+}
+
+.i_close {
+	display: block;
+}
+
+/*===============
+HEADER CSS END
+=================*/
+
+
+
+
+
+/*==============
+BANNER CSS START
+================*/
+.banner_area {
+	margin-bottom: 60px;
+	position: relative;
+
+}
+
+.single_slider {
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center !important;
+	height: 500px;
+}
+
+.slick-arrow {
+	position: relative;
+	z-index: 99;
+}
+
+.left_btn, .right_btn {
+	position: absolute;
+	z-index: 9999999999;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: none;
+	border: 1px solid #ffffff;
+	font-size: 30px;
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+}
+.left_btn{
+	left: 20px;
+}
+.right_btn{
+	right: 20px;
+}
+.slick-dots{
+	text-align: center;
+}
+.banner_area .slick-dots {
+	position: absolute;
+	z-index: 9999;
+	top: 93%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.banner_area .slick-dots li {
+	display: inline-block;
+}
+
+.banner_area .slick-dots li button {
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	font-size: 0;
+	border: 1px solid #000;
+	background: transparent;
+	margin: 0 5px;
+	transition: all .3s linear;
+	position: relative;
+	z-index: 999;
+}
+.banner_area .slick-dots li.slick-active button{
+	background: red;
+	border: none;
+}
+
+
+.banner_overly {
+	background: rgba(0, 0, 0, .6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.banner_text {
+	text-align: right;
+	padding: 94px 0;
+}
+
+.banner_text h2 {
+	color: #e1e1e1;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	text-transform: uppercase;
+	line-height: 1;
+	margin-bottom: 30px;
+}
+
+.banner_text h1 {
+	color: #e1e1e1;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	text-transform: uppercase;
+	line-height: 1;
+	margin-bottom: 15px;
+}
+
+.banner_text p {
+	color: #e1e1e1;
+	font-weight: 400;
+	font-size: 13px;
+	text-transform: capitalize;
+	padding-left: 633px;
+	margin-bottom: 30px;
+}
+
+.banner_text .btn a {
+	color: #e1e1e1;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	background: #0872b9;
+	margin-left: 16px;
+	border: 1px solid #0872b9;
+	transition: all .3s linear;
+}
+
+.banner_text a:hover {
+	background: none;
+	border: 1px solid #fff;
+}
+
+/*============
+BANNER CSS END
+==============*/
+
+
+
+/*=====================
+BANNER SLIDER CSS START
+=====================*/
+
+
+
+
+/*=====================
+ABOUT SECTION CSS START
+=======================*/
+.about_area {
+	margin-bottom: 60px;
+}
+
+.about_img {
+	padding-top: 20px;
+	float: left;
+	width: 35%;
+}
+
+.about_tex {
+	float: left;
+	padding-top: 60px;
+	padding-left: 3px;
+	width: 65%;
+	color: #353535;
+	font-size: 13px;
+}
+
+.text_part-1 {
+	padding-bottom: 39px;
+}
+
+/*===================
+ABOUT SECTION CSS END
+=====================*/
+
+
+
+
+/*========================
+SERVICES SECTION CSS START
+=========================*/
+.Services_area {
+	margin-bottom: 60px;
+}
+
+.single_service {
+	margin-top: 80px;
+	text-align: center;
+	background: #f1f1f1;
+	float: left;
+	width: 32%;
+	position: relative;
+}
+
+.service_icon {
+	position: absolute;
+	width: 81px;
+	height: 81px;
+	background: #ffffff;
+	border-radius: 50%;
+	left: 50%;
+	top: -23%;
+	transform: translateX(-50%);
+}
+
+.icon_inner {
+	width: 73px;
+	height: 73px;
+	border: 2px solid #f1f1f1;
+	background: #ffffff;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 4px;
+	margin-top: 4px;
+
+}
+
+.img_inner {
+	width: 65px;
+	height: 65px;
+	background: #f1f1f1;
+	position: absolute;
+	border-radius: 50%;
+	margin-left: 2px;
+	margin-top: 2px;
+}
+
+.img_inner img {
+	margin-top: 10px;
+}
+
+.service_text {
+
+	padding-top: 51px;
+}
+
+.service_text h3 {
+	padding-bottom: 13px;
+	font-size: 16px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	color: #353535;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+.service_text p {
+	padding-bottom: 20px;
+}
+
+/*======================
+SERVICES SECTION CSS END
+========================*/
+
+
+
+
+
+/*========================
+PORTFOLI SECTION CSS START
+=========================*/
+.singal_portfoli {
+	width: 23.5%;
+	float: left;
+}
+
+.port_img {
+	position: relative;
+	line-height: 1;
+}
+
+.port_img img {
+	width: 100%;
+	height: 100%;
+}
+
+.port_overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, .6);
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s linear;
+
+}
+
+.port_img:hover .port_overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+.port_overlay a {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: #5bc5f4;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 13px;
+	color: #ffffff;
+}
+
+/*======================
+PORTFOLI SECTION CSS END
+======================*/
+
+
+/*====================
+TEAM SECTION CSS START
+======================*/
+.singal_team {
+	width: 23.5%;
+	text-align: center;
+	float: left;
+	margin-top: 30px;
+}
+
+.tem_img {
+	position: relative;
+	line-height: 1;
+}
+
+.tem_img img {
+	width: 100%;
+	height: 100%;
+}
+
+.team_overlay {
+	right: 0;
+	width: 0;
+	height: 99%;
+	position: absolute;
+	background: rgba(0, 0, 0, .6);
+	top: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s linear;
+}
+
+.tem_img:hover .team_overlay {
+	width: 31.5%;
+	opacity: 1;
+	visibility: visible;
+
+}
+
+.team_overlay .team_icon a {
+	margin-left: 19px;
+	font-size: 20px;
+	width: 38px;
+	height: 38px;
+	border: 1px solid #fbfbfb;
+	border-radius: 50%;
+	text-align: center;
+	display: block;
+	color: #ffffff;
+	line-height: 38px;
+	transition: all .3s linear;
+}
+
+.team_icon a:hover {
+	border: none;
+	background: #5bc5f4;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	color: #353535;
+	transition: all .3s linear;
+}
+
+h3:hover {
+	color: #5bc5f4;
+}
+
+.singal_team p {
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 14px;
+	line-height: 1;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	color: #555555;
+}
+
+/*==================
+TEAM SECTION CSS END
+====================*/
+
+
+
+
+
+/*==========================
+TSTIMONIAL SECTION CSS START
+============================*/
+.test_singal_parson {
+	margin-top: 60px;
+	text-align: center;
+	width: 49%;
+	height: 100px;
+	float: left;
+}
+
+.test_img {
+	margin-bottom: 35px;
+}
+
+.test_text {
+	text-align: center;
+	width: 100%;
+	background: #f1f1f1;
+	position: relative;
+	padding-top: 1px;
+}
+
+.test_inner {
+	left: 47%;
+	top: -16px;
+	transform: translateX(-50%);
+	position: absolute;
+	transform: rotate(45deg);
+	width: 32px;
+	height: 32px;
+	background: #f1f1f1;
+	z-index: -9;
+}
+
+.test_text h3 {
+	margin-top: 20px;
+	color: #353535;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.test_text h4 {
+	color: #555555;
+	font-size: 13px;
+	padding-bottom: 20px;
+}
+
+.test_text p {
+	padding-bottom: 20px;
+}
+
+/*========================
+TSTIMONIAL SECTION CSS END
+=========================*/
+
+
+
+
+
+/*=======================
+BOTTTOM SECTION CSS START
+=========================*/
+.bottom_area {
+	margin-top: 250px;
+	background: #353535;
+}
+
+.bottom_logo {
+	margin-top: 20px;
+	height: 300px;
+	width: 25%;
+	float: left;
+	padding-bottom: 20px;
+}
+
+.logo_text {
+	text-align: left;
+	color: #ffffff;
+	font-size: 13px;
+	padding-top: 20px;
+
+}
+
+.bottom_Contact {
+	width: 25%;
+	height: 300px;
+	float: left;
+}
+
+.bottom_Contact h6 {
+	color: #fff;
+	font-size: 16px;
+	font-family: sans-serif;
+	padding-top: 30px;
+	font-weight: 600;
+}
+
+.contact_i {
+	float: left;
+}
+
+.contact_i a {
+	float: left;
+	width: 40px;
+	height: 40px;
+	background: #5bc5f4;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.i_text {
+	float: left;
+	margin-left: 10px;
+	color: #fff;
+}
+
+.bottom_Contact a i {
+	color: #fff;
+	line-height: 40px;
+}
+
+
+
+
+.bottom_Links {
+	width: 20%;
+	height: 300px;
+	float: left;
+
+}
+
+.bottom_Links h6 {
+	color: #fff;
+	font-size: 16px;
+	font-family: sans-serif;
+	padding-top: 30px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.bottom_Links a {
+	color: #fff;
+	display: inline-block;
+	transition: all .3s linear;
+	text-transform: capitalize;
+}
+
+.bottom_Links a:hover {
+	color: #5bc5f4;
+}
+
+.pricing {
+	padding-left: 51px;
+}
+
+.Blog {
+	padding-left: 30px;
+}
+
+.Feedback {
+	padding-left: 33px;
+}
+
+
+.Flickr_img {
+	width: 30%;
+	height: 300px;
+	float: left;
+}
+
+.Flickr_img h6 {
+	color: #fff;
+	font-size: 16px;
+	font-family: sans-serif;
+	padding-top: 30px;
+	font-weight: 600;
+}
+
+.f_img img {
+	width: 90px;
+	height: 90px;
+	float: left;
+}
+
+/*=====================
+BOTTTOM SECTION CSS END
+=======================*/
+
+
+
+
+
+
+/*======================
+COPYRIGHT SECTION CSS START
+========================*/
+.copyright {
+	background: #555555;
+}
+
+.copyright_text {
+	position: relative;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+}
+
+.copyright_text p {
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	font-size: 13px;
+	text-align: center;
+	color: #f1f1f1;
+}
+
+.copyright_text a {
+	left: 61%;
+	position: absolute;
+	color: #5bc5f4;
+	font-size: 13px;
+}
+
+/*====================
+COPYRIGHT SECTION CSS END
+======================*/
